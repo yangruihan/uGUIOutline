@@ -36,6 +36,18 @@ public class UIOutline : BaseMeshEffect
     }
 #endif
 
+    public void SetWidth(int width)
+    {
+        outlineWidth = width;
+        Refresh();
+    }
+
+    public void SetColor(Color color)
+    {
+        outlineColor = color;
+        Refresh();
+    }
+
     protected override void Awake()
     {
         base.Awake();
